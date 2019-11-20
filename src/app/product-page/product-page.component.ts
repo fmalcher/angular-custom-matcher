@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductPageComponent implements OnInit {
 
   sku$ = this.route.paramMap.pipe(map(params => params.get('sku')));
+  queryParams$ = this.route.queryParams;
 
   constructor(private route: ActivatedRoute) { }
 
